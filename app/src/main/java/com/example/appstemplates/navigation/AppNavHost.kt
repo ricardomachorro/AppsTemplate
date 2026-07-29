@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.appstemplates.modules.menu.MenuScreen
 
 @Composable
 fun AppNavHost(
@@ -20,14 +21,14 @@ fun AppNavHost(
     ) {
 
         composable(NavigationItem.AnimationMenu.route) {
-            //LoginScreen(navController)
+            MenuScreen(navController)
         }
 
         composable(NavigationItem.Splash.route) {
             //SplashScreen(navController)
         }
         composable(NavigationItem.AnimationMenu.route) {
-            //LoginScreen(navController)
+            //
         }
     }
 
