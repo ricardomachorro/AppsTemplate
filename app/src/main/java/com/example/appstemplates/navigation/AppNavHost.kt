@@ -10,7 +10,7 @@ import androidx.navigation.compose.composable
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController,
-    startDestination: String = "NavigationItem.Splash.route",
+    startDestination: String = Screen.ANIMATION_MENU.name,
 
 ) {
     NavHost(
@@ -18,13 +18,17 @@ fun AppNavHost(
         navController = navController,
         startDestination = startDestination
     ) {
-        /*
-        composable(NavigationItem.Splash.route) {
-            SplashScreen(navController)
+
+        composable(NavigationItem.AnimationMenu.route) {
+            //LoginScreen(navController)
         }
-        composable(NavigationItem.Login.route) {
-            LoginScreen(navController)
-        }*/
+
+        composable(NavigationItem.Splash.route) {
+            //SplashScreen(navController)
+        }
+        composable(NavigationItem.AnimationMenu.route) {
+            //LoginScreen(navController)
+        }
     }
 
 }
